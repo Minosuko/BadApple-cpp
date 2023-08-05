@@ -47,13 +47,13 @@ int main(int argc, char *argv[]){
 				}else{
 					if(content[pos] != ' '){
 						SDL_RenderDrawLine(renderer, bpos*10, y*15, x*10+blen, y*15);
-						SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+						SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 						wlen++;
 						wpos = x;
 						blen = 0;
 					}else{
 						SDL_RenderDrawLine(renderer, wpos*10, y*15, x*10+wlen, y*15);
-						SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+						SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 						blen++;
 						bpos = x;
 						wlen = 0;
